@@ -1,0 +1,14 @@
+__pycache__
+*.pyc
+*.pyo
+*.swp
+.env
+.env.example
+venv/
+docs/
+build/
+dist/
+temp/
+*/tmp/
+*/temp/
+*/.pytest_cache
