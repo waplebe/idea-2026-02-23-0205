@@ -76,6 +76,10 @@ def delete_task(id):
 def bad_request(error):
     return jsonify({'error': str(error)}), 400
 
+@app.errorhandler(404)
+def not_found(error):
+    return jsonify({'error': 'Resource not found'}), 404
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
